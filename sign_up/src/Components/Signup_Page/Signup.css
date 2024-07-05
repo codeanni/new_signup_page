@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(39, 41, 30, 0.14);
+    margin: auto;
+    margin-top: 70px;
+    width: 515px;
+    height: 530px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-radius: 70px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    /* gap: 9px; */
+    width: 100%;
+    color: rgba(0, 0, 0, 1);
+    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.inputs{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 390px;
+    height: 45px;
+    background: rgb(255, 255, 255, 1);
+    border-radius: 22px;
+}
+.input img{
+    margin: 0px 25px;
+    width: 48px;
+    height: 27px;
+}
+
+.input input{
+    height: 40px;
+    width: 390px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.signup-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    width: 208px;
+  }
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-link {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #333;
+  }
+  
+  .login-link a {
+    color: red;
+    text-decoration: none;
+    margin-left: 0.25rem;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  .submit-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    /* gap: 9px; */
+    width: 100%;
+    
+    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+
+
+

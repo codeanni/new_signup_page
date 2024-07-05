@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+  background-color: #ffff;
+  overflow-y: hidden;
+  background-image: 
+    url('./Components/Assets/Polygon\ 5.png'),
+    url('./Components/Assets/Polygon\ 3.png'),
+    url('./Components/Assets/Polygon\ 7.png'),
+    url('./Components/Assets/Polygon\ 10.png'),
+    url('./Components/Assets/Polygon\ 11.png'),
+    url('./Components/Assets/Polygon\ 8.png'),
+    url('./Components/Assets/Polygon\ 2.png')
+    ;
+  background-size: 
+    250px 120px,
+    150px 150px,
+    200px 200px,
+    250px 276px,
+    45px 67px,
+    89px 56px,
+    20px 32px;
+  background-position: 
+    top left,
+    bottom right,
+    center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transform: rotate(0deg);
+}
+
