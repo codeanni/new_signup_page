@@ -5,11 +5,17 @@ const SignupModel = require('./models/Signup')
 
 //middleware
 const app = express()
-app.use(cors())
+app.use(cors(
+    {
+        origin: [""],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+))
 app.use(express.json())
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/test')
+mongoose.connect('mongodb+srv://anni:anni123@cluster0.lvcbz17.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0')
 
 app.post('/signup' , (req,res) =>{
     const {name, email, password, confirmpassword} = req.body;
@@ -27,41 +33,3 @@ app.post('/signup' , (req,res) =>{
 app.listen(3001,() => {
     console.log("server is running")
 })
-
-
-// mongoose.connect(MONGO_URL)
-// const db = mongoose.connection;
-// db.on('error', (err) =>{
-//     console.error("mongodb connection error", err);
-// })
-// db.once('open', () =>{
-//     console.log("mongodb is connected");
-// })
-
-// const userSchema = new mongoose.Schema({
-//     name:String,
-//     email:String,
-//     password:String,
-//     confirmpassword:String
-// })
-// const User = mongoose.model('User',userSchema)
-// app.post('/register', async(req,res) => {
-//     try{
-//         const newUser = new User({
-//         name:req.body.name,
-//         email:req.body.email,
-//         password:req.body.password,
-//         confirmpassword:req.body.confirmpassword,
-//     });
-//     const savedUser = await newUser.save()
-//     res.status(201).json(savedUser)
-
-//     }catch (error){
-//         console.error("error during signup",error)
-//         res.status(500).json({error:"inter server error"})
-
-//     }
-    
-// })
-
-// app.listen(PORT)
