@@ -7,7 +7,7 @@ const SignupModel = require('./models/Signup')
 const app = express()
 app.use(cors(
     {
-        origin: [""],
+        origin: ["https://new-signup-page-frontend.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
