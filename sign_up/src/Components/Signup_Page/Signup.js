@@ -12,9 +12,10 @@ const Signup = () => {
     const [password,setPassword] = useState();
     const [confirmPassword,setConfirmpassword] = useState();
 
+    axios.defaults.withCredentials = true;
     const handleSubmit = (e) =>{
         e.preventDefault();
-        axios.post('http://localhost:3001/signup',{name, email, password, confirmPassword})
+        axios.post('https://new-signup-page-api.vercel.app/signup',{name, email, password, confirmPassword})
         .then(result => console.log(result))
         .catch(err => console.log(err))
     }
